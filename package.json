@@ -1,0 +1,31 @@
+{
+  "name": "cordova-plugin-authorizenetplugin",
+  "version": "0.0.1",
+  "description": "An Android Cordova plugin that allows users to display simple Toast messages at the bottom of the screen.",
+  "cordova": {
+    "id": "cordova-plugin-authorizenetplugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Patrick-Ullrich/cordova-plugin-authorizenet.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Patrick Ullrich <me@patrickullrich.ca>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Patrick-Ullrich/cordova-plugin-authorizenet/issues"
+  },
+  "homepage": "https://github.com/Patrick-Ullrich/cordova-plugin-authorizenet/"
+}

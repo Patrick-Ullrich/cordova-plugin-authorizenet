@@ -1,0 +1,7 @@
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'net.authorize:accept-sdk-android:1.0.2'
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-authorizenet" version="0.0.1">
+    <name>AuthorizeNet</name>
+
+    <description>Cordova Authorize.NET Plugin</description>
+    <license>MIT</license>
+
+    <keywords>cordova,android,authorizenet</keywords>
+    <repo>https://github.com/Patrick-Ullrich/cordova-plugin-authorizenet.git</repo>
+    <issue>https://github.com/Patrick-Ullrich/cordova-plugin-authorizenet/issues</issue>
+  
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+  
+    <js-module src="www/authorizenet.js" name="AuthorizeNetPlugin">
+        <clobbers target="window.plugins.authroizenetPlugin" />
+    </js-module>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="AuthorizeNetPlugin">
+                <param name="android-package" value="com.patrickullrich.cordova.plugin.AuthorizeNetPlugin"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/AuthorizeNetPlugin.java" target-dir="src/com/patrickullrich/cordova/plugin" />
+        <framework custom="true" src="src/android/authorize-gradle.gradle" type="gradleReference" />
+    </platform>
+</plugin>
