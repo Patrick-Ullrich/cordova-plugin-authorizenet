@@ -11,12 +11,8 @@
     <repo>https://github.com/Patrick-Ullrich/cordova-plugin-authorizenet.git</repo>
     <issue>https://github.com/Patrick-Ullrich/cordova-plugin-authorizenet/issues</issue>
   
-    <engines>
-        <engine name="cordova" version=">=3.0.0"/>
-    </engines>
-  
     <js-module src="www/authorizenet.js" name="AuthorizeNetPlugin">
-        <clobbers target="window.plugins.authroizenetPlugin" />
+        <clobbers target="window.plugins.authorizenetPlugin" />
     </js-module>
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
@@ -27,5 +23,25 @@
 
         <source-file src="src/android/AuthorizeNetPlugin.java" target-dir="src/com/patrickullrich/cordova/plugin" />
         <framework custom="true" src="src/android/authorize-gradle.gradle" type="gradleReference" />
+    </platform>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="AuthorizeNetPlugin">
+                <param name="ios-package" value="AuthorizeNetPlugin" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/AuthorizeNetPlugin.h" />
+        <source-file src="src/ios/AuthorizeNetPlugin.m" />
+
+    
+         <podspec>
+            <config>
+                <source url="https://github.com/CocoaPods/Specs.git"/>
+            </config>
+            <pods use-frameworks="true">
+                <pod name="AuthorizeNetAccept" spec="~> 0.4.0" swift-version="4.0" />
+            </pods>
+        </podspec>
     </platform>
 </plugin>
