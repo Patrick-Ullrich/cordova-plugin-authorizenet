@@ -1,5 +1,5 @@
 #import "AuthorizeNetPlugin.h"
-@import AcceptSDK;
+@import AuthorizeNetAccept;
 
 @interface AuthorizeNetPlugin : CDVPlugin
 @property (strong, atomic) AcceptSDKHandler* handler;

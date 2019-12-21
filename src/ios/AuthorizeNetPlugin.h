@@ -1,5 +1,5 @@
 #import <Cordova/CDV.h>
-@import AcceptSDK;
+@import AuthorizeNetAccept;
 
 @interface CDVAuthorizeNetPlugin : CDVPlugin 
 
