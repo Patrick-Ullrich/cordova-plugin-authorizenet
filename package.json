@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-authorizenetplugin",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "An Android Cordova plugin that allows users to display simple Toast messages at the bottom of the screen.",
   "cordova": {
     "id": "cordova-plugin-authorizenetplugin",
