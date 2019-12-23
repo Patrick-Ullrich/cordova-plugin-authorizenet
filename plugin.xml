@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        id="cordova-plugin-authorizenetplugin" version="0.0.3">
+        id="cordova-plugin-authorizenetplugin" version="0.0.5">
     <name>AuthorizeNet</name>
 
     <description>Cordova Authorize.NET Plugin</description>
